@@ -7,7 +7,7 @@
         <a class="nav-link {{ (Route::currentRouteName() === 'about') ? 'active' : '' }}" href="{{ route('about')}}">Chi siamo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link {{ (Route::currentRouteName() === 'students') ? 'active' : '' }}" href="{{ route('students')}}">Studenti</a>
+        <a class="nav-link {{ (Route::currentRouteName() === 'movies') ? 'active' : '' }}" href="{{ route('movies')}}">Film</a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Route::currentRouteName() === 'contacts') ? 'active' : '' }}" href="{{ route('contacts')}}">Contatti</a>

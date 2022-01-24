@@ -19,6 +19,6 @@ Route::get('/chi-siamo', 'PageController@about')->name('about');
 
 Route::get('/contatti','PageController@contacts')->name('contacts');
 
-Route::get('/studenti', 'Student@index')->name('students');
+Route::get('/studenti', 'MovieController@index')->name('movies');
 
 
