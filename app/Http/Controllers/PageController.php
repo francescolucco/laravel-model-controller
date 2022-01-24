@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Movie;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function index(){
 
-            $name = 'Giovanni';
-            $surname = 'Trevisan';
+            $name = 'Bentornato';
+            $surname = 'Nio';
 
             // vecchio modo:
         // return view('home', ['name'=> $name, 'surname' => $surname]);
@@ -24,7 +25,8 @@ class PageController extends Controller
     }
 
     public function contacts(){
-        return view('contacts');
+        $movies = Movie::all();
+        return view('contacts', compact('movies'));
     }
 
 

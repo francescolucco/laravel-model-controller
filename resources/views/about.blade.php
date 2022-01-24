@@ -3,8 +3,11 @@
 @section('content')
 
 <div class="about">
-  <div class="box-img"></div>
-    <h1 class="text-center">Chi siamo</h1>
+  <div class="box-img">
+    <div class="container">
+      <h1 class="text-white">Chi siamo</h1>
+    </div>
+  </div>
    <div class="container">
      <p>
       The Space Cinema nasce nel luglio del 2009 dalla fusione dei circuiti Warner Village Cinemas e Medusa Cinema.

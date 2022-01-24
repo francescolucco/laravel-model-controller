@@ -10019,27 +10019,56 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.home {
+  background-color: #050505;
+  height: calc(100vh - 130px);
+  padding-top: 20px;
+}
+
+.about .box-img {
+  width: 100%;
+  height: 250px;
+  background-image: url("/img/cinema1200.jpg");
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin-bottom: 25px;
+  background-position: top;
+  background-size: cover;
+}
+.about .box-img .container {
+  padding-bottom: 15px;
+}
+
 .cards.container .card {
   padding: 20px;
   border-radius: 25px;
   background-color: #2d2d47;
+  cursor: pointer;
+  height: 600px;
+}
+.cards.container .card:hover {
+  background-color: #74a565;
+}
+.cards.container .card:hover .box-img {
+  transition: 0.25s;
+  border: 4px solid white;
 }
 .cards.container .card .box-img {
   width: 100%;
   height: 350px;
   overflow: hidden;
   border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cards.container .card .box-img img {
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cards.container .card h3.title-card {
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.about .box.img {
-  width: 100%;
-  height: 400px;
-  background-image: url("/img/cinema1200.jpg");
 }
